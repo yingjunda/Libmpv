@@ -95,6 +95,6 @@ Pod::Spec.new do |s|
   ]
   s.frameworks = ['AVFoundation', 'AudioToolbox', 'CoreAudio', 'CoreVideo', 'CoreFoundation', 'CoreMedia', 'Metal', 'QuartzCore', 'VideoToolbox', 'UIKit', 'Foundation', 'CoreGraphics']
   s.libraries  = ['z', 'bz2', 'iconv', 'xml2', 'c++', 'resolv', 'expat', 'lzma']
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-undefined dynamic_lookup' }
-  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-undefined dynamic_lookup' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-undefined dynamic_lookup -all_load' }
+  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-undefined dynamic_lookup -all_load' }
 end
